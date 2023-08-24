@@ -26,7 +26,11 @@ html {
 
 main {
   background-image: url("../public/island.webp");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.text-shadow {
+  text-shadow: 0 0 4px black;
 }
