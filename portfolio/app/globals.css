@@ -19,3 +19,14 @@
   --shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
   --dark-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background-image: url("../public/island.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
