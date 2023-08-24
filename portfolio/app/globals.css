@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Fjalla+One&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+
+:root {
+  --grey: rgb(207, 219, 213);
+  --light-grey: rgb(232, 237, 223);
+  --gold: rgb(245, 203, 92);
+  --black: rgb(36, 36, 35);
+  --light-black: rgb(51, 53, 51);
+  --VT323: "VT323", monospace;
+  --shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
+  --dark-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+}
