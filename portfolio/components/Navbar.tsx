@@ -37,7 +37,7 @@ const Navbar = () => {
         )}
       >
         <motion.ul
-          className="text-white text-xl text-center flex gap-3 xl:gap-16 justify-end flex-col xl:flex-row"
+          className="text-white text-lg md:text-xl text-center flex gap-3 xl:gap-16 justify-end flex-col xl:flex-row"
           variants={variants}
           initial="hidden"
           animate="show"
