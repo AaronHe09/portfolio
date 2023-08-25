@@ -28,18 +28,49 @@ const Parallax = () => {
         height={120}
         className="absolute top-[58%] left-[90%]"
       />
-      <Image src="/cloud.webp" alt="cloud" layout="fill" objectFit="cover" />
-      <Image src="/cloud2.webp" alt="cloud" layout="fill" objectFit="cover" />
-      <Image src="/cloud3.webp" alt="cloud" layout="fill" objectFit="cover" />
-      <Image src="/cloud4.webp" alt="cloud" layout="fill" objectFit="cover" />
+      <Image
+        src="/cloud.webp"
+        alt="cloud"
+        layout="fill"
+        objectFit="cover"
+        style={{ position: "absolute", top: `${scrollY * -0.07}%` }}
+      />
+      <Image
+        src="/cloud2.webp"
+        alt="cloud"
+        layout="fill"
+        objectFit="cover"
+        style={{ position: "absolute", top: `${scrollY * -0.05}%` }}
+      />
+      <Image
+        src="/cloud3.webp"
+        alt="cloud"
+        layout="fill"
+        objectFit="cover"
+        style={{ position: "absolute", top: `${scrollY * -0.1}%` }}
+      />
+      <Image
+        src="/cloud4.webp"
+        alt="cloud"
+        layout="fill"
+        objectFit="cover"
+        style={{ position: "absolute", top: `${scrollY * -0.07}%` }}
+      />
       <Image
         src="/cloud5.webp"
         alt="cloud"
         layout="fill"
         objectFit="cover"
         className="z-10"
+        style={{ position: "absolute", top: `${scrollY * -0.05}%` }}
       />
-      <Image src="/sun.webp" alt="sun" layout="fill" objectFit="cover" />
+      <Image
+        src="/sun.webp"
+        alt="sun"
+        layout="fill"
+        objectFit="cover"
+        style={{ position: "absolute", top: `${scrollY * -0.05}%` }}
+      />
       <Image
         src="/deer.svg"
         alt="deer"
