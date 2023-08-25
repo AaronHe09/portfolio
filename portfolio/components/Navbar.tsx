@@ -1,8 +1,28 @@
+"use client";
+import { motion, easeInOut } from "framer-motion";
+
 const Navbar = () => {
+  const variants = {
+    hidden: { opacity: 0, y: "-100%" },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        easeInOut,
+      },
+    },
+  };
+
   return (
     <header id="home">
       <nav className=" px-36 py-12">
-        <ul className="text-white text-xl flex gap-16 justify-end">
+        <motion.ul
+          className="text-white text-xl flex gap-16 justify-end"
+          variants={variants}
+          initial="hidden"
+          animate="show"
+        >
           <li>
             <a href="#home" className="text-shadow">
               Home
@@ -23,7 +43,7 @@ const Navbar = () => {
               Contact
             </a>
           </li>
-        </ul>
+        </motion.ul>
       </nav>
     </header>
   );
