@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -14,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen">
-        <main className="h-screen  ">
+      <body>
+        <main>
           <Navbar />
           {children}
         </main>
