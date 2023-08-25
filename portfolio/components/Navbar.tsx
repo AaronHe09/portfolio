@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header id="home">
+    <header id="home" className="absolute top-0 right-0 z-50">
       <nav className=" px-36 py-12">
         <motion.ul
           className="text-white text-xl flex gap-16 justify-end"
