@@ -1,7 +1,20 @@
+"use client";
 import Image from "next/image";
 import Intro from "./Intro";
+import { useEffect, useState } from "react";
 
 const Parallax = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY <= 740) {
+        setScrollY(window.scrollY);
+        console.log(window.scrollY);
+      }
+    });
+  }, []);
+
   return (
     <section
       className="relative h-screen w-screen overflow-hidden"
