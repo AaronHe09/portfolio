@@ -24,10 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      id="home"
-      className="absolute top-0 right-0 z-50 flex flex-col justify-center items-center mx-4 my-3 xl:mx-36 xl:my-12 xl:block min-w-[70px]"
-    >
+    <header className="absolute top-0 right-0 z-50 flex flex-col justify-center items-center mx-4 my-3 xl:mx-36 xl:my-12 xl:block min-w-[70px]">
       <Hamburger handleHamburger={handleHamburger} />
       <nav
         className={clsx(
