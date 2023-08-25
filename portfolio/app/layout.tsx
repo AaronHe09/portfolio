@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -15,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="h-[200vh] overflow-x-hidden">
         <main>
           <Navbar />
           {children}

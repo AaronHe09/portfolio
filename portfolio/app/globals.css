@@ -21,11 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
+#parallax-container {
   background-image: url("../public/island.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .text-shadow {
