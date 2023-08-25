@@ -4,7 +4,11 @@ const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 import React from "react";
 
-const Intro = () => {
+type IntroProp = {
+  scrollY: number;
+};
+
+const Intro = ({ scrollY }: IntroProp) => {
   const variant = {
     hidden: { y: 50, opacity: 0 },
     show: {
@@ -19,7 +23,10 @@ const Intro = () => {
   };
 
   return (
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full p-2 z-30">
+    <div
+      className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full p-2 z-30"
+      style={{ top: `${(-750 + scrollY) * -0.06}%` }}
+    >
       <motion.h1
         className={`${vt323.className} text-center text-7xl md:text-9xl text-shadow text-[var(--gold)] dark-shadow cursor-default`}
         variants={variant}

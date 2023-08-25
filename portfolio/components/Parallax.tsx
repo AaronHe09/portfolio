@@ -4,7 +4,7 @@ import Intro from "./Intro";
 import { useEffect, useState } from "react";
 
 const Parallax = () => {
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState<number>(0);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -19,7 +19,7 @@ const Parallax = () => {
       className="relative h-screen w-screen overflow-hidden"
       id="parallax-container"
     >
-      <Intro />
+      <Intro scrollY={scrollY} />
 
       <Image
         src="/boat.webp"
