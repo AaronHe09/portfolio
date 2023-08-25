@@ -24,22 +24,22 @@ const Navbar = () => {
           animate="show"
         >
           <li>
-            <a href="#home" className="text-shadow">
+            <a href="#home" className="text-shadow nav-hover">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="text-shadow">
+            <a href="#about" className="text-shadow nav-hover">
               About
             </a>
           </li>
           <li>
-            <a href="#projects" className="text-shadow">
+            <a href="#projects" className="text-shadow nav-hover">
               Projects
             </a>
           </li>
           <li>
-            <a href="contact" className="text-shadow">
+            <a href="contact" className="text-shadow nav-hover">
               Contact
             </a>
           </li>
