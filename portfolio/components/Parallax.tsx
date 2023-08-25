@@ -10,7 +10,6 @@ const Parallax = () => {
     window.addEventListener("scroll", () => {
       if (window.scrollY <= 740) {
         setScrollY(window.scrollY);
-        console.log(window.scrollY);
       }
     });
   }, []);
