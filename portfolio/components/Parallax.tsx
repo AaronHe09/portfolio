@@ -16,61 +16,30 @@ const Parallax = () => {
         height={120}
         className="absolute top-[58%] left-[90%]"
       />
-      <Image
-        src="/cloud.webp"
-        alt="cloud"
-        layout="fill"
-        objectFit="cover"
-        className="absolute"
-      />
-      <Image
-        src="/cloud2.webp"
-        alt="cloud"
-        layout="fill"
-        objectFit="cover"
-        className="absolute"
-      />
-      <Image
-        src="/cloud3.webp"
-        alt="cloud"
-        layout="fill"
-        objectFit="cover"
-        className="absolute"
-      />
-      <Image
-        src="/cloud4.webp"
-        alt="cloud"
-        layout="fill"
-        objectFit="cover"
-        className="absolute"
-      />
+      <Image src="/cloud.webp" alt="cloud" layout="fill" objectFit="cover" />
+      <Image src="/cloud2.webp" alt="cloud" layout="fill" objectFit="cover" />
+      <Image src="/cloud3.webp" alt="cloud" layout="fill" objectFit="cover" />
+      <Image src="/cloud4.webp" alt="cloud" layout="fill" objectFit="cover" />
       <Image
         src="/cloud5.webp"
         alt="cloud"
         layout="fill"
         objectFit="cover"
-        className="absolute z-10"
+        className="z-10"
       />
-      <Image
-        src="/sun.webp"
-        alt="sun"
-        layout="fill"
-        objectFit="cover"
-        className="absolute"
-      />
+      <Image src="/sun.webp" alt="sun" layout="fill" objectFit="cover" />
       <Image
         src="/deer.svg"
         alt="deer"
         layout="fill"
         objectFit="cover"
-        className="z-10 absolute"
+        className="z-10 deer"
       />
       <Image
         src="/background.webp"
         alt="background"
         layout="fill"
         objectFit="cover"
-        className="absolute"
       />
     </section>
   );
