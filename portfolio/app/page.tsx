@@ -9,11 +9,12 @@ export default function Home() {
       <section id="home">
         <Parallax />
       </section>
-      <div className="px-72">
-        <section id="about">
-          <About />
-        </section>
-      </div>
+      <section
+        id="about"
+        className="flex flex-col justify-center items-center px-4 py-10"
+      >
+        <About />
+      </section>
     </>
   );
 }
