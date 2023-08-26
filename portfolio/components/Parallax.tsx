@@ -15,7 +15,7 @@ const Parallax = () => {
   }, []);
 
   return (
-    <section
+    <div
       className="relative h-[1080px] w-screen overflow-hidden"
       id="parallax-container"
     >
@@ -104,7 +104,7 @@ const Parallax = () => {
         objectFit="cover"
         style={{ position: "absolute", top: `${scrollY * 0.05}%` }}
       />
-    </section>
+    </div>
   );
 };
 
