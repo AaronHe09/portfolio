@@ -16,7 +16,7 @@ const Parallax = () => {
 
   return (
     <section
-      className="relative h-screen w-screen overflow-hidden"
+      className="relative h-[1080px] w-screen overflow-hidden"
       id="parallax-container"
     >
       <Intro scrollY={scrollY} />
@@ -89,11 +89,12 @@ const Parallax = () => {
         className="z-20 deer"
       />
       <Image
-        src="/background.webp"
+        src="/underground.webp"
         alt="background"
         layout="fill"
         objectFit="cover"
         className="z-10"
+        style={{ position: "absolute", top: "28%" }}
       />
       <Image
         src="/island.webp"
