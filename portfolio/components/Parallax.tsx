@@ -26,11 +26,11 @@ const Parallax = () => {
         alt="boat"
         width={120}
         height={120}
-        className="absolute top-[58%] left-[90%] z-10"
+        className="absolute top-[50%] left-[90%] z-10"
         style={{
           position: "absolute",
           left: `${90 + scrollY * -0.015}%`,
-          top: `${58 + scrollY * 0.05}%`,
+          top: `${50 + scrollY * 0.05}%`,
         }}
       />
       <Image
@@ -87,6 +87,7 @@ const Parallax = () => {
         layout="fill"
         objectFit="cover"
         className="z-20 deer"
+        style={{ position: "absolute", top: "-10%" }}
       />
       <Image
         src="/underground.webp"
@@ -94,7 +95,7 @@ const Parallax = () => {
         layout="fill"
         objectFit="cover"
         className="z-10"
-        style={{ position: "absolute", top: "28%" }}
+        style={{ position: "absolute", top: "14%" }}
       />
       <Image
         src="/island.webp"
