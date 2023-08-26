@@ -37,6 +37,14 @@ html {
   margin: 10px 0;
   transition: 300ms ease-in-out;
 }
+
+.active-menu .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.active-menu .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .nav-hover {
   @apply relative after:absolute inline-block after:content-[''] after:bg-[var(--gold)] after:h-[2px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-500 hover:after:w-full;
 }

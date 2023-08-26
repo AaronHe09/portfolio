@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const handleHamburger = () => {
     setShowNav((prev) => !prev);
+    console.log(showNav);
   };
 
   const variants = {
@@ -24,8 +25,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="absolute top-0 right-0 z-50 flex flex-col justify-center items-center mx-4 my-3 xl:mx-36 xl:my-12 xl:block min-w-[70px]">
-      <Hamburger handleHamburger={handleHamburger} />
+    <header className="fixed top-0 right-0 z-50 flex flex-col justify-center items-end px-4 py-3 xl:px-16 xl:py-6 xl:block w-full">
+      <Hamburger handleHamburger={handleHamburger} showNav={showNav} />
       <nav
         className={clsx(
           "xl:block",
@@ -34,7 +35,7 @@ const Navbar = () => {
         )}
       >
         <motion.ul
-          className="text-white text-lg md:text-xl text-center flex gap-3 xl:gap-16 justify-end flex-col xl:flex-row"
+          className="text-white text-lg md:text-xl text-end flex gap-3 xl:gap-16 justify-end flex-col xl:flex-row"
           variants={variants}
           initial="hidden"
           animate="show"
