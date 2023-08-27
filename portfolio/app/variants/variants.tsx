@@ -13,6 +13,7 @@ export const glow = {
     ],
     transition: {
       ease: easeOut,
+      delay: 0.15,
     },
   },
 };
@@ -30,6 +31,6 @@ export const staggerText = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", damping: 12, stiffness: 200 },
+    transition: { type: "spring", damping: 12, stiffness: 200, delay: 0.15 },
   },
 };

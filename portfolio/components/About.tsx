@@ -1,7 +1,7 @@
 "use client";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
-import { container, glow, staggerText } from "@/app/variants/variants";
+import { glow, staggerText } from "@/app/variants/variants";
 import Carousel from "./Carousel";
 
 const About = () => {
@@ -16,23 +16,34 @@ const About = () => {
   }, [isInView]);
 
   return (
-    <motion.div
-      className="section_div"
-      ref={ref}
-      variants={container}
-      initial="hidden"
-      animate={mainControls}
-      exit="hidden"
-    >
+    <motion.div className="section_div" ref={ref}>
       <h2 className="h2">
-        <motion.span className="section_number" variants={staggerText}>
+        <motion.span
+          className="section_number"
+          variants={staggerText}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: true }}
+        >
           01.
         </motion.span>
-        <motion.span className="section_banner" variants={glow}>
+        <motion.span
+          className="section_banner"
+          variants={glow}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: true }}
+        >
           About
         </motion.span>
       </h2>
-      <motion.p className="mt-10 text-2xl text-white" variants={staggerText}>
+      <motion.p
+        className="mt-10 text-2xl text-white"
+        variants={staggerText}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: true }}
+      >
         Hello there, I'm Aaron, currently living in California at 22 years
         young. Lately, my creative energy has been channeled into crafting{" "}
         <span className="text-green-400">engaging</span> and{" "}
@@ -48,10 +59,20 @@ const About = () => {
         href="resume.pdf"
         target="_blank"
         className=" text-blue-300 text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume']"
+        variants={staggerText}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: true }}
       >
         <span className="text-swap">Check out my resume</span>
       </motion.a>
-      <motion.div className="mt-20">
+      <motion.div
+        className="mt-20"
+        variants={staggerText}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: true }}
+      >
         <Carousel />
       </motion.div>
     </motion.div>
