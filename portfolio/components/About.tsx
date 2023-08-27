@@ -2,6 +2,7 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { container, glow, staggerText } from "@/app/variants/variants";
+import Carousel from "./Carousel";
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -50,6 +51,9 @@ const About = () => {
       >
         <span className="text-swap">Check out my resume</span>
       </motion.a>
+      <motion.div>
+        <Carousel />
+      </motion.div>
     </motion.div>
   );
 };
