@@ -72,7 +72,7 @@ export const Carousel = () => {
             <icon.icon
               style={{ color: "#F4CE67", width: "100%", height: "auto" }}
             />
-            <h3 className="text-center">{icon.title}</h3>
+            <h3 className="text-center text-white text-lg">{icon.title}</h3>
           </SwiperSlide>
         );
       })}
