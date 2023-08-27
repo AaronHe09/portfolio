@@ -26,7 +26,7 @@ const About = () => {
         <motion.span className="section_number" variants={staggerText}>
           01.
         </motion.span>
-        <motion.span className="section_header" variants={glow}>
+        <motion.span className="section_banner" variants={glow}>
           About
         </motion.span>
       </motion.h2>

@@ -61,8 +61,8 @@ html {
   @apply text-3xl text-white;
 }
 
-.section_header {
-  @apply text-5xl text-[#27333F] bg-[var(--gold)] rounded-md transform;
+.section_banner {
+  @apply text-5xl text-[#27333F] bg-[var(--gold)] rounded-md transform bg-gradient-to-r from-[var(--gold)] to-[#f3db92];
 }
 
 .h2 {
