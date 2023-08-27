@@ -68,3 +68,7 @@ html {
 .h2 {
   @apply flex flex-col;
 }
+
+.text_swap {
+  @apply relative overflow-hidden inline-block before:absolute before:w-full before:left-0 before:content-[''] after:absolute after:w-full after:left-0 after:top-0 after:origin-[100%_50%];
+}

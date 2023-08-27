@@ -1,7 +1,7 @@
 "use client";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
-import { container, downUp, glow, staggerText } from "@/app/variants/variants";
+import { container, glow, staggerText } from "@/app/variants/variants";
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -42,6 +42,13 @@ const About = () => {
         the unpredictable paths of Baldur's Gate 3 – mirroring the choices I
         embrace in real life adventures!
       </motion.p>
+      <motion.a
+        href="resume.pdf"
+        className="text-blue-300 text-xl float-right underline after:content-['Check out my resume']"
+        variants={staggerText}
+      >
+        Check out my resume
+      </motion.a>
     </motion.div>
   );
 };
