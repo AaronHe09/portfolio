@@ -51,7 +51,7 @@ const About = () => {
       >
         <span className="text-swap">Check out my resume</span>
       </motion.a>
-      <motion.div>
+      <motion.div className="mt-20">
         <Carousel />
       </motion.div>
     </motion.div>
