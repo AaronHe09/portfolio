@@ -42,11 +42,11 @@ const About = () => {
         the unpredictable paths of Baldur's Gate 3 – mirroring the choices I
         embrace in real life adventures!
       </motion.p>
-      <motion.abbr
+      <motion.a
         href="resume.pdf"
-        className="text-blue-300 text-xl float-right underline after:content-['Check_out_my_resume']"
+        className="text-white text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume']"
       >
-        Check out my resume
+        <span className="text-swap">Check out my resume</span>
       </motion.a>
     </motion.div>
   );
