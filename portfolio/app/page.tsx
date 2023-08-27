@@ -1,5 +1,3 @@
-"use client";
-
 import About from "@/components/About";
 import Parallax from "@/components/Parallax";
 
