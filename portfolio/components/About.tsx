@@ -58,7 +58,7 @@ const About = () => {
       <motion.a
         href="resume.pdf"
         target="_blank"
-        className=" text-blue-300 text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume']"
+        className=" text-blue-300 text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume'] mt-5"
         variants={staggerText}
         initial={"hidden"}
         whileInView={"show"}
