@@ -44,8 +44,7 @@ const About = () => {
       </motion.p>
       <motion.a
         href="resume.pdf"
-        className="text-blue-300 text-xl float-right underline after:content-['Check out my resume']"
-        variants={staggerText}
+        className="text-blue-300 text-xl float-right underline after:content-['Check_out_my_resume'] text-swap"
       >
         Check out my resume
       </motion.a>
