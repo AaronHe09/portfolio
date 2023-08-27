@@ -30,6 +30,6 @@ export const staggerText = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", damping: 8, stiffness: 100 },
+    transition: { type: "spring", damping: 6, stiffness: 200 },
   },
 };
