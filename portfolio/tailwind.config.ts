@@ -15,6 +15,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-3d")({ legacy: true })],
+  plugins: [],
 };
 export default config;

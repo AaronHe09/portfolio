@@ -32,20 +32,21 @@ const About = () => {
         </motion.span>
       </h2>
       <motion.p className="mt-10 text-2xl text-white" variants={staggerText}>
-        Hello there, I'm Aaron, currently living the Californian dream at 21
-        years young. Lately, my creative energy has been channeled into crafting
-        engaging and innovative website designs – much like the one you're
-        delving into. The world of web development turned out to be far more
-        intricate than I expected, but the rush of creativity it brings has
-        truly captured my heart. When I'm not bringing digital visions to life,
-        you'll probably find me in the midst of Valorant matches or navigating
-        the unpredictable paths of Baldur's Gate 3 – mirroring the choices I
-        embrace in real life adventures!
+        Hello there, I'm Aaron, currently living in California at 22 years
+        young. Lately, my creative energy has been channeled into crafting{" "}
+        <span className="text-green-400">engaging</span> and{" "}
+        <span className="text-blue-400">innovative</span> website designs – much
+        like the one you're delving into. The world of web development turned
+        out to be far more intricate than I expected, but the rush of creativity
+        it brings has truly captured my heart. When I'm not giving life to
+        digital landscapes, you'll likely spot me making questionable decisions
+        in Baldur's Gate 3 – because why reserve all the poor choices for real
+        life adventures?
       </motion.p>
       <motion.a
         href="resume.pdf"
         target="_blank"
-        className="text-white text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume']"
+        className=" text-blue-300 text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume']"
       >
         <span className="text-swap">Check out my resume</span>
       </motion.a>
