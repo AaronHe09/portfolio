@@ -1,14 +1,24 @@
 "use client";
 import { motion, easeInOut } from "framer-motion";
 import Hamburger from "./Hamburger";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
+  const [scrollY, setScrollY] = useState<number>(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY <= 800 && window.scrollY >= 500) {
+        setScrollY(window.scrollY);
+      }
+    });
+  }, []);
 
   const handleHamburger = () => {
     setShowNav((prev) => !prev);
+    console.log(showNav);
   };
 
   const variants = {
@@ -24,8 +34,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="absolute top-0 right-0 z-50 flex flex-col justify-center items-center mx-4 my-3 xl:mx-36 xl:my-12 xl:block min-w-[70px]">
-      <Hamburger handleHamburger={handleHamburger} />
+    <header
+      className={clsx(
+        "fixed top-0 right-0 z-50 flex flex-col justify-center items-end px-4 py-3 xl:px-14 xl:py-4 xl:block w-full transform duration-500",
+        { " bg-white bg-opacity-10": scrollY >= 700 }
+      )}
+    >
+      <Hamburger handleHamburger={handleHamburger} showNav={showNav} />
       <nav
         className={clsx(
           "xl:block",
@@ -34,7 +49,7 @@ const Navbar = () => {
         )}
       >
         <motion.ul
-          className="text-white text-lg md:text-xl text-center flex gap-3 xl:gap-16 justify-end flex-col xl:flex-row"
+          className="text-white text-lg md:text-2xl text-end flex gap-3 xl:gap-14 justify-end flex-col xl:flex-row"
           variants={variants}
           initial="hidden"
           animate="show"

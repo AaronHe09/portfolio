@@ -1,10 +1,15 @@
-import React from "react";
+import clsx from "clsx";
 
-type HamburgerProps = { handleHamburger: () => void };
+type HamburgerProps = { handleHamburger: () => void; showNav: boolean };
 
-const Hamburger = ({ handleHamburger }: HamburgerProps) => {
+const Hamburger = ({ handleHamburger, showNav }: HamburgerProps) => {
   return (
-    <div className="xl:hidden mt-5" onClick={handleHamburger}>
+    <div
+      className={clsx("xl:hidden ", {
+        "active-menu": showNav === true,
+      })}
+      onClick={handleHamburger}
+    >
       <span className="bar"></span>
       <span className="bar"></span>
       <span className="bar"></span>
