@@ -52,8 +52,8 @@ const About = () => {
         out to be far more intricate than I expected, but the rush of creativity
         it brings has truly captured my heart. When I'm not giving life to
         digital landscapes, you'll likely spot me making questionable decisions
-        in Baldur's Gate 3 – because why reserve all the poor choices for real
-        life adventures?
+        in <span className=" text-amber-600">Baldur's Gate 3</span> – because
+        why reserve all the poor choices for real life adventures?
       </motion.p>
       <motion.a
         href="resume.pdf"
