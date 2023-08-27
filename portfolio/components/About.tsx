@@ -44,6 +44,7 @@ const About = () => {
       </motion.p>
       <motion.a
         href="resume.pdf"
+        target="_blank"
         className="text-white text-xl float-right inline-block relative overflow-hidden text-swap-wrapper w-[152px] h-8 after:content-['Check_out-my-resume']"
       >
         <span className="text-swap">Check out my resume</span>
