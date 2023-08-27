@@ -3,6 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { glow, staggerText } from "@/app/variants/variants";
 import Carousel from "./Carousel";
+import Project from "./Project";
 
 const Projects = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -37,6 +38,9 @@ const Projects = () => {
           Projects
         </motion.span>
       </h2>
+      <motion.div className="flex flex-wrap mt-10">
+        <Project />
+      </motion.div>
     </div>
   );
 };
