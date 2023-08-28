@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Parallax from "@/components/Parallax";
 import Projects from "@/components/Projects";
 
@@ -19,6 +20,12 @@ export default function Home() {
         className="flex flex-col justify-center items-center px-4 py-10 mt-10"
       >
         <Projects />
+      </section>
+      <section
+        id="contact"
+        className="flex flex-col justify-center items-center px-4 py-10 mt-10"
+      >
+        <Contact />
       </section>
     </>
   );
