@@ -13,7 +13,7 @@ const About = () => {
     if (isInView) {
       mainControls.start("show");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <motion.div className="section_div" ref={ref}>
@@ -44,15 +44,16 @@ const About = () => {
         whileInView={"show"}
         viewport={{ once: true }}
       >
-        Hello there, I'm Aaron, currently living in California at 22 years
+        Hello there, I&apos;m Aaron, currently living in California at 22 years
         young. Lately, my creative energy has been channeled into crafting{" "}
         <span className="text-green-400">engaging</span> and{" "}
         <span className="text-blue-400">innovative</span> website designs – much
-        like the one you're delving into. The world of web development turned
-        out to be far more intricate than I expected, but the rush of creativity
-        it brings has truly captured my heart. When I'm not giving life to
-        digital landscapes, you'll likely spot me making questionable decisions
-        in <span className=" text-amber-600">Baldur's Gate 3</span> – because
+        like the one you&apos;re delving into. The world of web development
+        turned out to be far more intricate than I expected, but the rush of
+        creativity it brings has truly captured my heart. When I&apos;m not
+        giving life to digital landscapes, you&apos;ll likely spot me making
+        questionable decisions in{" "}
+        <span className=" text-amber-600">Baldur&apos;s Gate 3</span> – because
         why reserve all the poor choices for real life adventures?
       </motion.p>
       <motion.a

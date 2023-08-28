@@ -13,7 +13,7 @@ const Projects = () => {
     if (isInView) {
       mainControls.start("show");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <div className="section_div" ref={ref}>

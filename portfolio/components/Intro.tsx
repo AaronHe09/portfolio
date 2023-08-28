@@ -33,7 +33,7 @@ const Intro = ({ scrollY }: IntroProp) => {
         initial="hidden"
         animate="show"
       >
-        Hi, I'm Aaron
+        Hi, I&apos;m Aaron
         <span className="text-2xl md:text-4xl block mt-3">
           Interactive Front-End Developer
         </span>

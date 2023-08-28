@@ -13,7 +13,7 @@ const Contact = () => {
     if (isInView) {
       mainControls.start("show");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <div className="section_div" ref={ref}>
@@ -47,8 +47,8 @@ const Contact = () => {
         <p className="basis-1/2 text-2xl text-white ">
           Thank you for visiting my website. Feel free to drop me a line through
           the form. Whether you have questions, feedback, or just want to say
-          hello, I'm eager to hear from you. Let's connect and explore new
-          possibilities together.
+          hello, I&apos;m eager to hear from you. Let&apos;s connect and explore
+          new possibilities together.
         </p>
         <ContactForm />
       </motion.div>

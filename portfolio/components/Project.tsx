@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { staggerText } from "@/app/variants/variants";
+import uuid from "uuid-random";
 
 const images = [
   {
@@ -51,7 +52,10 @@ const Project = () => {
       <>
         {lang.map((lan) => {
           return (
-            <span className="text-xl text-black bg-[var(--gold)] rounded-md px-2">
+            <span
+              className="text-xl text-black bg-[var(--gold)] rounded-md px-2"
+              key={uuid()}
+            >
               {lan}
             </span>
           );
@@ -65,7 +69,10 @@ const Project = () => {
       {images.map((img) => {
         const { image, title, live, github, desc, lang } = img;
         return (
-          <article className=" basis-full md:basis-[calc(50%_-_40px)] flex flex-col items-center card-gradient rounded-lg">
+          <article
+            className=" basis-full md:basis-[calc(50%_-_40px)] flex flex-col items-center card-gradient rounded-lg"
+            key={uuid()}
+          >
             <motion.div
               className="h-[300px] w-full relative rounded-lg overflow-hidden group"
               variants={staggerText}

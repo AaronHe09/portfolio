@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import uuid from "uuid-random";
 import {
   BiLogoJavascript,
   BiLogoHtml5,
@@ -68,7 +69,7 @@ export const Carousel = () => {
     >
       {icons.map((icon) => {
         return (
-          <SwiperSlide className="w-52">
+          <SwiperSlide className="w-52" key={uuid()}>
             <icon.icon
               style={{ color: "#F4CE67", width: "100%", height: "auto" }}
             />
