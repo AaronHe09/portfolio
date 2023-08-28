@@ -109,5 +109,5 @@ html {
 }
 
 .form_textarea {
-  @apply mb-10 p-2 text-xl text-white bg-transparent border-b-2 border-[var(--gold)] rounded-md focus:outline-none focus:shadow-xl focus:scale-105 focus:duration-200 resize-none;
+  @apply mb-7 p-2 text-xl text-white bg-transparent border-b-2 border-[var(--gold)] rounded-md focus:outline-none focus:shadow-xl focus:scale-105 focus:duration-200 resize-none;
 }

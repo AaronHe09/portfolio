@@ -48,7 +48,7 @@ const ContactForm = () => {
       />
       <button
         type="submit"
-        className="self-start text-xl text-white pl-3 hover:text-[var(--gold)] hover:scale-105 duration-200"
+        className="self-start text-2xl text-white pl-3 hover:text-[var(--gold)] hover:scale-105 duration-200"
       >
         Send
       </button>
