@@ -67,7 +67,7 @@ const Project = () => {
         return (
           <article className=" basis-full md:basis-[calc(50%_-_40px)] flex flex-col items-center card-gradient rounded-lg">
             <motion.div
-              className="h-[300px] w-full relative rounded-lg overflow-hidden"
+              className="h-[300px] w-full relative rounded-lg overflow-hidden group"
               variants={staggerText}
               initial={"hidden"}
               whileInView={"show"}
@@ -81,6 +81,7 @@ const Project = () => {
                   objectFit="cover"
                 />
               </a>
+              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-75 group-hover:scale-100 group-hover:bg-white/30 cursor-pointer"></div>
             </motion.div>
             <div className="w-full border-b-2">
               <motion.h3
