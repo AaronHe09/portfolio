@@ -11,6 +11,7 @@
   --gold: rgb(245, 203, 92);
   --shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
   --dark-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  --light-grey: rgb(232, 237, 223);
 }
 
 html {
