@@ -25,7 +25,7 @@ const Project = () => {
   const gitHubLink = (github: string) => {
     return (
       <div>
-        <a href={github}>
+        <a href={github} target="_blank">
           <FaGithub style={{ width: "30px", height: "auto", color: "white" }} />
         </a>
       </div>
@@ -35,7 +35,7 @@ const Project = () => {
   const liveLink = (live: string) => {
     return (
       <div>
-        <a href={live}>
+        <a href={live} target="_blank">
           <HiOutlineExternalLink
             style={{ width: "30px", height: "auto", color: "white" }}
           />
