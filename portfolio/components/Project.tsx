@@ -1,33 +1,87 @@
-import React from "react";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
-const images = ["question", "sword"];
+const images = [
+  {
+    image: "question",
+    title: "Rizz-O-Meter",
+    live: "https://rizz-o-meter.vercel.app/",
+    github: "https://github.com/AaronHe09/rizz-o-meter",
+    desc: "The Rizz-o-Meter website offers a lighthearted and whimsical experience. Respond to 10 playful and random questions, earning points along the way to attain a personalized rank. This entertaining project provides a fun diversion, allowing users to engage in an amusing and carefree activity.",
+    lang: ["NextJs", "Tailwind", "Postgres", "Vercel"],
+  },
+  {
+    image: "sword",
+    title: "Unveiling Ancient Military Might",
+    live: "https://unveiling-ancient-military-might.aaronhe.online/",
+    github: "https://github.com/AaronHe09/Unveiling-Ancient-Military-Might",
+    desc: "Unveiling Ancient Military Might is a website that draws inspiration from Total War: Rome 2, offering insights into the military histories and tactics of ancient civilizations. Through concise historical accounts, users can explore the composition of these civilizations' armies, accompanied by brief summaries of key military units.",
+    lang: ["React", "Express", "Postgres"],
+  },
+];
 
 const Project = () => {
+  const gitHubLink = (github: string) => {
+    return (
+      <div>
+        <a href={github}>
+          <FaGithub style={{ width: "30px", height: "auto", color: "white" }} />
+        </a>
+      </div>
+    );
+  };
+
+  const liveLink = (live: string) => {
+    return (
+      <div>
+        <a href={live}>
+          <HiOutlineExternalLink
+            style={{ width: "30px", height: "auto", color: "white" }}
+          />
+        </a>
+      </div>
+    );
+  };
+
+  const mapLang = (lang: string[]) => {
+    return (
+      <>
+        {lang.map((lan) => {
+          return <span className="text-xl text-white">{lan}</span>;
+        })}
+      </>
+    );
+  };
+
   return (
     <>
-      {images.map((image) => {
+      {images.map((img) => {
+        const { image, title, live, github, desc, lang } = img;
         return (
-          <article className="basis-full md:basis-1/2 mb-10">
-            <div className=" max-w-[300px] h-[450px] bg-white m-auto relative">
-              <div className="h-1/2 relative">
-                <Image
-                  src={`/${image}-background.webp`}
-                  alt="background"
-                  fill={true}
-                  objectFit="cover"
-                  style={{ position: "absolute", top: 0, left: 0 }}
-                />
+          <article className=" basis-full md:basis-[calc(50%_-_40px)] flex flex-col items-center card-gradient rounded-lg">
+            <div className="h-[300px] w-full relative rounded-lg overflow-hidden">
+              <Image
+                src={`/${image}-background.webp`}
+                alt="background"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="w-full border-b-2">
+              <h3 className="text-3xl text-white text-center">{title}</h3>
+              <div className="flex">
+                <div className="p-5 basis-2/3 flex flex-wrap gap-4">
+                  {mapLang(lang)}
+                </div>
+                <div className="p-5 basis-1/3 flex gap-5">
+                  {gitHubLink(github)}
+                  {liveLink(live)}
+                </div>
               </div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-solid border-black border-2 p-3 rotate-45 bg-white">
-                <Image
-                  src={`/${image}.webp`}
-                  alt={`/${image} project`}
-                  width={40}
-                  height={40}
-                  className=" -rotate-45"
-                />
-              </div>
+            </div>
+            <div>
+              <p className="text-xl text-white">{desc}</p>
             </div>
           </article>
         );
