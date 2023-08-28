@@ -2,6 +2,7 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { glow, staggerText } from "@/app/variants/variants";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -36,6 +37,9 @@ const Contact = () => {
           Contact
         </motion.span>
       </h2>
+      <div>
+        <ContactForm />
+      </div>
     </div>
   );
 };
