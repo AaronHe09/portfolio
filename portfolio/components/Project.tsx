@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { motion } from "framer-motion";
+import { staggerText, glow } from "@/app/variants/variants";
 
 const images = [
   {
@@ -64,28 +66,62 @@ const Project = () => {
         const { image, title, live, github, desc, lang } = img;
         return (
           <article className=" basis-full md:basis-[calc(50%_-_40px)] flex flex-col items-center card-gradient rounded-lg">
-            <div className="h-[300px] w-full relative rounded-lg overflow-hidden">
+            <motion.div
+              className="h-[300px] w-full relative rounded-lg overflow-hidden"
+              variants={staggerText}
+              initial={"hidden"}
+              whileInView={"show"}
+              viewport={{ once: true }}
+            >
               <Image
                 src={`/${image}-background.webp`}
                 alt="background"
                 layout="fill"
                 objectFit="cover"
               />
-            </div>
+            </motion.div>
             <div className="w-full border-b-2">
-              <h3 className="text-3xl text-white text-center">{title}</h3>
+              <motion.h3
+                className="text-3xl text-white text-center"
+                variants={staggerText}
+                initial={"hidden"}
+                whileInView={"show"}
+                viewport={{ once: true }}
+              >
+                {title}
+              </motion.h3>
               <div className="flex">
-                <div className="p-5 basis-2/3 flex flex-wrap gap-4">
+                <motion.div
+                  className="p-5 basis-2/3 flex flex-wrap gap-4"
+                  variants={staggerText}
+                  initial={"hidden"}
+                  whileInView={"show"}
+                  viewport={{ once: true }}
+                >
                   {mapLang(lang)}
-                </div>
-                <div className="p-5 basis-1/3 flex gap-5">
+                </motion.div>
+                <motion.div
+                  className="p-5 basis-1/3 flex gap-5"
+                  variants={staggerText}
+                  initial={"hidden"}
+                  whileInView={"show"}
+                  viewport={{ once: true }}
+                >
                   {gitHubLink(github)}
                   {liveLink(live)}
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="mt-5">
-              <p className="text-xl text-white">{desc}</p>
+              <motion.p
+                className="text-xl text-white"
+                variants={staggerText}
+                initial={"hidden"}
+                whileInView={"show"}
+                viewport={{ once: true }}
+              >
+                {desc}
+              </motion.p>
             </div>
           </article>
         );
