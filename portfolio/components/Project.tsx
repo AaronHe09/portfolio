@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { staggerText, glow } from "@/app/variants/variants";
+import { staggerText } from "@/app/variants/variants";
 
 const images = [
   {
