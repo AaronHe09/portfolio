@@ -37,7 +37,13 @@ const Contact = () => {
           Contact
         </motion.span>
       </h2>
-      <div className="mt-10 flex flex-col md:flex-row gap-16">
+      <motion.div
+        className="mt-10 flex flex-col md:flex-row gap-16"
+        variants={staggerText}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: true }}
+      >
         <p className="basis-1/2 text-2xl text-white ">
           Thank you for visiting my website. Feel free to drop me a line through
           the form. Whether you have questions, feedback, or just want to say
@@ -45,7 +51,7 @@ const Contact = () => {
           possibilities together.
         </p>
         <ContactForm />
-      </div>
+      </motion.div>
     </div>
   );
 };
