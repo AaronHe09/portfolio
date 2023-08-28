@@ -38,7 +38,7 @@ const Projects = () => {
           Projects
         </motion.span>
       </h2>
-      <motion.div className="flex flex-wrap justify-center items-center mt-10 gap-10">
+      <motion.div className="flex flex-wrap justify-center mt-10 gap-10">
         <Project />
       </motion.div>
     </div>

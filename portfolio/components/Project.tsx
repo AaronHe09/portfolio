@@ -89,7 +89,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mt-5">
               <p className="text-xl text-white">{desc}</p>
             </div>
           </article>
