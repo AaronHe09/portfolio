@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Parallax from "@/components/Parallax";
 import Projects from "@/components/Projects";
 
@@ -27,6 +28,9 @@ export default function Home() {
       >
         <Contact />
       </section>
+      <footer className="flex flex-col justify-center items-center px-4 py-10 mt-10">
+        <Footer />
+      </footer>
     </>
   );
 }
