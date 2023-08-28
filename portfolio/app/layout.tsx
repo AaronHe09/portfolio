@@ -7,7 +7,7 @@ const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Portfolio",
+  description: "Aaron He's portfolio",
 };
 
 export default function RootLayout({
