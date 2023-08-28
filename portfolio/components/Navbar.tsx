@@ -74,6 +74,15 @@ const Navbar = () => {
               Contact
             </a>
           </li>
+          <li>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className="text-shadow nav-hover"
+            >
+              Resume
+            </a>
+          </li>
         </motion.ul>
       </nav>
     </header>

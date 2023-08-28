@@ -73,59 +73,35 @@ const Project = () => {
               whileInView={"show"}
               viewport={{ once: true }}
             >
-              <a href={live} target="_blank">
-                <Image
-                  src={`/${image}-background.webp`}
-                  alt="background"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </a>
+              <Image
+                src={`/${image}-background.webp`}
+                alt="background"
+                layout="fill"
+                objectFit="cover"
+              />
               <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-75 group-hover:scale-100 group-hover:bg-white/30 cursor-pointer"></div>
             </motion.div>
-            <div className="w-full border-b-2">
-              <motion.h3
-                className="text-3xl text-white text-center"
-                variants={staggerText}
-                initial={"hidden"}
-                whileInView={"show"}
-                viewport={{ once: true }}
-              >
-                {title}
-              </motion.h3>
-              <div className="flex">
-                <motion.div
-                  className="p-5 basis-2/3 flex flex-wrap gap-4"
-                  variants={staggerText}
-                  initial={"hidden"}
-                  whileInView={"show"}
-                  viewport={{ once: true }}
-                >
+            <motion.div
+              className="w-full border-b-2"
+              variants={staggerText}
+              initial={"hidden"}
+              whileInView={"show"}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-3xl text-white text-center">{title}</h3>
+              <div className="flex gap-5">
+                <div className="py-5 basis-2/3 flex flex-wrap gap-4">
                   {mapLang(lang)}
-                </motion.div>
-                <motion.div
-                  className="p-5 basis-1/3 flex gap-5"
-                  variants={staggerText}
-                  initial={"hidden"}
-                  whileInView={"show"}
-                  viewport={{ once: true }}
-                >
+                </div>
+                <div className="py-5 basis-1/3 flex gap-5">
                   {gitHubLink(github)}
                   {liveLink(live)}
-                </motion.div>
+                </div>
               </div>
-            </div>
-            <div className="mt-5">
-              <motion.p
-                className="text-xl text-white"
-                variants={staggerText}
-                initial={"hidden"}
-                whileInView={"show"}
-                viewport={{ once: true }}
-              >
-                {desc}
-              </motion.p>
-            </div>
+            </motion.div>
+            <motion.div className="mt-5">
+              <p className="text-xl text-white">{desc}</p>
+            </motion.div>
           </article>
         );
       })}

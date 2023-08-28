@@ -29,7 +29,7 @@ const Parallax = () => {
         className="absolute top-[50%] left-[90%] z-10"
         style={{
           position: "absolute",
-          left: `${90 + scrollY * -0.015}%`,
+          left: `${80 + scrollY * -0.015}%`,
           top: `${50 + scrollY * 0.05}%`,
         }}
       />
@@ -63,7 +63,7 @@ const Parallax = () => {
         layout="fill"
         objectFit="cover"
         className="z-10"
-        style={{ position: "absolute", top: `${scrollY * -0.08}%` }}
+        style={{ position: "absolute", top: `${-12 + scrollY * -0.08}%` }}
       />
       <Image
         src="/cloud5.webp"
