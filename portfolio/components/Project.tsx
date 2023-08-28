@@ -89,11 +89,11 @@ const Project = () => {
               viewport={{ once: true }}
             >
               <h3 className="text-3xl text-white text-center">{title}</h3>
-              <div className="flex">
-                <div className="p-5 basis-2/3 flex flex-wrap gap-4">
+              <div className="flex gap-5">
+                <div className="py-5 basis-2/3 flex flex-wrap gap-4">
                   {mapLang(lang)}
                 </div>
-                <div className="p-5 basis-1/3 flex gap-5">
+                <div className="py-5 basis-1/3 flex gap-5">
                   {gitHubLink(github)}
                   {liveLink(live)}
                 </div>
