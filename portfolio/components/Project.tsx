@@ -73,12 +73,14 @@ const Project = () => {
               whileInView={"show"}
               viewport={{ once: true }}
             >
-              <Image
-                src={`/${image}-background.webp`}
-                alt="background"
-                layout="fill"
-                objectFit="cover"
-              />
+              <a href={live} target="_blank">
+                <Image
+                  src={`/${image}-background.webp`}
+                  alt="background"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </a>
             </motion.div>
             <div className="w-full border-b-2">
               <motion.h3
