@@ -103,3 +103,11 @@ html {
 .h2 {
   @apply flex flex-col;
 }
+
+.form_input {
+  @apply mb-5 p-2 text-xl text-white bg-transparent border-b-2 border-[var(--gold)] rounded-md focus:outline-none focus:shadow-xl focus:scale-105 focus:duration-200;
+}
+
+.form_textarea {
+  @apply mb-10 p-2 text-xl text-white bg-transparent border-b-2 border-[var(--gold)] rounded-md focus:outline-none focus:shadow-xl focus:scale-105 focus:duration-200 resize-none;
+}

@@ -28,14 +28,30 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <button type="submit">Send</button>
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col basis-1/2">
+      <input
+        type="text"
+        name="user_name"
+        className="form_input"
+        placeholder="Name"
+      />
+      <input
+        type="email"
+        name="user_email"
+        className="form_input"
+        placeholder="Email"
+      />
+      <textarea
+        name="message"
+        placeholder="Message"
+        className="form_textarea"
+      />
+      <button
+        type="submit"
+        className="self-start text-xl text-white pl-3 hover:text-[var(--gold)] hover:scale-105 duration-200"
+      >
+        Send
+      </button>
     </form>
   );
 };

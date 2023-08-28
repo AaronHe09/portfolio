@@ -37,7 +37,13 @@ const Contact = () => {
           Contact
         </motion.span>
       </h2>
-      <div>
+      <div className="mt-10 flex flex-col md:flex-row gap-16">
+        <p className="basis-1/2 text-2xl text-white ">
+          Thank you for visiting my website. Feel free to drop me a line through
+          the form. Whether you have questions, feedback, or just want to say
+          hello, I'm eager to hear from you. Let's connect and explore new
+          possibilities together.
+        </p>
         <ContactForm />
       </div>
     </div>
