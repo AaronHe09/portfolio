@@ -11,6 +11,7 @@
   --gold: rgb(245, 203, 92);
   --shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
   --dark-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  --light-grey: rgb(232, 237, 223);
 }
 
 html {
@@ -101,4 +102,12 @@ html {
 
 .h2 {
   @apply flex flex-col;
+}
+
+.form_input {
+  @apply mb-5 p-2 text-xl text-white bg-transparent border-b-2 border-[var(--gold)] rounded-md focus:outline-none focus:shadow-xl focus:scale-105 focus:duration-200;
+}
+
+.form_textarea {
+  @apply mb-10 p-2 text-xl text-white bg-transparent border-b-2 border-[var(--gold)] rounded-md focus:outline-none focus:shadow-xl focus:scale-105 focus:duration-200 resize-none;
 }

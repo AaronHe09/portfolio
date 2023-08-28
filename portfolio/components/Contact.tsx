@@ -2,9 +2,9 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { glow, staggerText } from "@/app/variants/variants";
-import Project from "./Project";
+import ContactForm from "./ContactForm";
 
-const Projects = () => {
+const Contact = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -25,7 +25,7 @@ const Projects = () => {
           whileInView={"show"}
           viewport={{ once: true }}
         >
-          02.
+          03.
         </motion.span>
         <motion.span
           className="section_banner"
@@ -34,14 +34,26 @@ const Projects = () => {
           whileInView={"show"}
           viewport={{ once: true }}
         >
-          Projects
+          Contact
         </motion.span>
       </h2>
-      <motion.div className="flex flex-wrap justify-center mt-10 gap-16">
-        <Project />
+      <motion.div
+        className="mt-10 flex flex-col md:flex-row gap-16"
+        variants={staggerText}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: true }}
+      >
+        <p className="basis-1/2 text-2xl text-white ">
+          Thank you for visiting my website. Feel free to drop me a line through
+          the form. Whether you have questions, feedback, or just want to say
+          hello, I'm eager to hear from you. Let's connect and explore new
+          possibilities together.
+        </p>
+        <ContactForm />
       </motion.div>
     </div>
   );
 };
 
-export default Projects;
+export default Contact;
