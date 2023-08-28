@@ -48,10 +48,19 @@ const Project = () => {
     return (
       <>
         {lang.map((lan) => {
-          return <span className="text-xl text-white">{lan}</span>;
+          return (
+            <span className="text-xl text-black bg-[var(--gold)] rounded-md px-2">
+              {lan}
+            </span>
+          );
         })}
       </>
     );
+  };
+
+  const getRandomColor = () => {
+    const color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+    return color;
   };
 
   return (
