@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <div>
       <div className="flex justify-center gap-8 mb-5">
-        <a href="https://github.com/AaronHe09">
+        <a href="https://github.com/AaronHe09" target="_blank">
           <AiFillGithub
             style={{ width: "50px", height: "50px", color: "white" }}
           />
         </a>
-        <a href="https://www.linkedin.com/in/aaronhe09/">
+        <a href="https://www.linkedin.com/in/aaronhe09/" target="_blank">
           <AiFillLinkedin
             style={{ width: "50px", height: "50px", color: "white" }}
           />
