@@ -26,7 +26,7 @@ const images = [
 const Project = () => {
   const gitHubLink = (github: string) => {
     return (
-      <div>
+      <div className=" hover:scale-105 duration-150">
         <a href={github} target="_blank">
           <FaGithub style={{ width: "30px", height: "auto", color: "white" }} />
         </a>
@@ -36,7 +36,7 @@ const Project = () => {
 
   const liveLink = (live: string) => {
     return (
-      <div>
+      <div className=" hover:scale-105 duration-150">
         <a href={live} target="_blank">
           <HiOutlineExternalLink
             style={{ width: "30px", height: "auto", color: "white" }}
