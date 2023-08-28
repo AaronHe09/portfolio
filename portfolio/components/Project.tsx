@@ -99,17 +99,9 @@ const Project = () => {
                 </div>
               </div>
             </motion.div>
-            <div className="mt-5">
-              <motion.p
-                className="text-xl text-white"
-                variants={staggerText}
-                initial={"hidden"}
-                whileInView={"show"}
-                viewport={{ once: true }}
-              >
-                {desc}
-              </motion.p>
-            </div>
+            <motion.div className="mt-5">
+              <p className="text-xl text-white">{desc}</p>
+            </motion.div>
           </article>
         );
       })}
