@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { VT323 } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
