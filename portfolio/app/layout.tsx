@@ -6,8 +6,14 @@ import { VT323 } from "next/font/google";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Aaron He | Portfolio",
   description: "Aaron He's portfolio",
+  icons: {
+    icon: ["/favicon.ico?=v4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
